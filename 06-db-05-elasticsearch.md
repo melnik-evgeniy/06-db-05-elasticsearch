@@ -34,18 +34,20 @@ CMD ["sh", "-c", "${ES_HOME}/bin/elasticsearch"]
 ```
 ```bash
 docker build . -t melnik1988/devops-elasticsearch:7.17
-Push to Hub
-
-docker push melnik1988/devops-elasticsearch:7.17
 ```
+Push to Hub
+![](https://github.com/melnik-evgeniy/06-db-05-elasticsearch/blob/831196642b149009e163cefd49c345573078af68/1.jpg?raw=true)
+
 - ссылку на образ в репозитории dockerhub
-https://hub.docker.com/repository/docker/melnik1988/
+https://hub.docker.com/repository/docker/melnik1988/devops-elasticsearch
 - ответ `elasticsearch` на запрос пути `/` в json виде
 ```bash
-$ docker run --rm -d --name elastic -p 9200:9200 -p 9300:9300 melnik1988/devops-elasticsearch:8.2.0
+$ docker run --rm -d --name elastic -p 9200:9200 -p 9300:9300 melnik1988/devops-elasticsearch:7.17
 $ docker ps
+```
+![](https://github.com/melnik-evgeniy/06-db-05-elasticsearch/blob/831196642b149009e163cefd49c345573078af68/1.jpg?raw=true)
 
-
+```bash
 $ curl -X GET 'localhost:9200/'
 ```
 ```json

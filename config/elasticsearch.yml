@@ -31,17 +31,17 @@ discovery.type: single-node
 #
 # Path to directory where to store the data (separate multiple locations by comma):
 #
-path.data: /var/lib/data
+path.data: /var/lib/elasticsearch/data
 #
 # Path to log files:
 #
-path.logs: /var/lib/logs
+path.logs: /var/lib/elasticsearch/logs
 
 #Settings REPOSITORY PATH 
 #for Image from YUM (esp)
 #path.repo: /usr/share/elasticsearch/snapshots
 #for Image from TAR (est)
-path.repo: /elasticsearch-7.11.1/snapshots
+#path.repo: /elasticsearch-7.17/snapshots
 #
 # ----------------------------------- Memory -----------------------------------
 #
